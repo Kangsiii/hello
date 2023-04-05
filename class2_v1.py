@@ -2,7 +2,7 @@ class Car:
     def __init__(self, make, model):
         self.make = make
         self.model = model
-        self.odometer_reading = 22 # 초기값 설정
+        self.odometer_reading = 21 # 초기값 설정
 
     def get_descriptive_name(self):
         long_name = f"{self.make} {self.model}"
@@ -24,5 +24,5 @@ my_new_car = Car('audi', 'a4')
 
 print(my_new_car.get_descriptive_name()) # 차량 정보 출력
 
-my_new_car.update_odometer(23) # 주행거리 갱신
+my_new_car.update_odometer(24) # 주행거리 갱신
 my_new_car.read_odometer() # 주행거리 출력
